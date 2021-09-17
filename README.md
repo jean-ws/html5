@@ -1,4 +1,4 @@
-<h2>Repositório <strong>html5</strong></h2>
+<h2><strong>html5</strong></h2>
             <p>Eu criei este repositório pra deixar minhas anotações salvas e também pra caso alguém queira utilizar para consulta</p>
 
 <h3>Como falar comigo?</h3>
