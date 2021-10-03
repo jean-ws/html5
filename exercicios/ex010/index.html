@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Trabalhando com links</h1>
+    <h2>Usando links externos (tag &lt;a&gt;...&lt;a&gt; de âncora)</h2>
+        <p>Parâmetros href (o link), target passando <code>_blank</code> (irá abrir em outra guia) e rel (informa que é link externo, de autor, <strong>nofollow</strong>, etc)</p>
+        <p>Você pode acessar <a href="https://github.com/Jean-justanotheruser/teste" target="_blank" rel="external">meu repositório público</a> no GitHub</p>
+
+        <pre><code>
+    &lt;p&gt;Você pode acessar &lt;a href="https://github.com/Jean-justanotheruser/teste" target="_blank" rel="external"&gt;meu repositório público&lt;/a&gt; no GitHub&lt;/p&gt;
+        </code></pre>
+
+    <h2>Usando links internos</h2>
+        <p>Está é a primeira página do site. Se quiser, também pode acessar a <a href="pag002.html" rel="next">segunda página</a></p>
+        <!--para funcionar assim, a página a ser linkada deve estar na mesma página-->
+
+        <p>Você também pode acessar nossa <a href="noticias/pag003.html" target="_self">página de notícias</a></p>
+
+        <p>Aqui vale a pena mencionar que o uso de pastas requer conhecimento básico de nagevação como em Linux.<br>
+            Nesse exercício (10), foi usado o <code>../</code> para voltar um diretório, por exemplo</p>
+
+
+    <h2>Links para download</h2>
+        <ul>
+            <li><a href="livro/10 - Ligações em toda parte.pdf" target="_blank" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar PDF</a></li>
+            <li><a href="livro/10 - Ligações em toda parte.rar" download="10 - Ligações em toda parte.pdf" type="application/x-rar-compressed">Baixar arquivo .RAR</a></li>
+            <!-- o parâtro download será o nome do arquivo a ser baixado-->
+            <!-- O type indica ao navegador o tipo do arquivo a ser baixado-->
+            <!-- lista de media types (tbm conhecidos como MIME) em iana.org/assignments/media-types-->
+        </ul>
+
+        <p>Se liga em como ficou o código pra esses download aqui de cima:<pre><code>
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="livro/10 - Ligações em toda parte.pdf" target="_blank" download="10 - Ligações em toda parte.pdf" type="application/pdf"&gt;Baixar PDF&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="livro/10 - Ligações em toda parte.rar" download="10 - Ligações em toda parte.pdf" type="application/x-rar-compressed">Baixar arquivo .RAR&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;</code></pre></p>
+        <p>O parâmetro download será o nome do arquivo a ser baixado<br>
+            O type indica ao navegador o tipo do arquivo a ser baixado<br>
+            Uma lista de media types (tbm conhecidos como MIME) pode ser encontrada em:
+            <ul>
+                <li><a href="https://www.iana.org/assignments/media-types/media-types.xhtml">iana.org/assignments/media-types</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types">E tem esse do mozilla que eu achei o .rar (application/x-rar-compressed)</li>
+            </ul> </p>
+</body>
+</html>

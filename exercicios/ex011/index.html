@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem diâmica/responsiva (tag &lt;picture&gt;...&lt;picture&gt;)</h1>
+        <p>Tente visualizar esta página em tamanhos de tela diferente.</p>
+        <picture>
+            <!--esta imagem pequena tem 300px. Desta forma, será mostrada em telas menores que 470p de largura-->
+            <source media="(max-width: 470px)" srcset="imagens/img-p.jpg" type="image/jpeg"> 
+            <!--a próxima tem 450px. Aparecerá para telas até 720p de largura--> 
+            <source media="(max-width: 720px)" srcset="imagens/img-mp.jpg" type="image/jpeg">
+            <!--Já sabe né...-->
+            <source media="(max-width: 1020px)" srcset="imagens/img-m.jpg" type="image/jpeg">
+            <!--Imagem que aparecerá em telas maiores que 1020p-->
+            <img src="imagens/img-g.jpg" alt="Imagem responsiva">
+        </picture>  <br>
+        <!--Existe também o min-width. Neste caso, a ordem das imagens teriam que ser invertidas no código-->
+
+
+        <p>Esta é uma das tags que eu mais gostei. E realmente acho que ela vai ser MUITO útil.</p>
+        <p>
+            <code>
+                <pre>
+                    &lt;picture&gt;
+                        &lt;source media="max-width: 0000px" srcset="pasta/nomedoarquivo.formato" type="mime"&gt;
+                        &lt;img src="pasta/arquivo.formato" alt="Texto alternativo"&gt;
+                    &lt;/picture&gt;
+                </pre>
+
+            </code>
+        </p>
+
+    <h1>Áudios</h1>
+    <p>Reproduzindo mp3 em HTML5</p>
+    <audio src="audios/ncs-slamming-brutal-death-metal.mp3" controls></audio>
+    <!--autoplay não funcionou (estou usando o Chrome para testar)-->
+
+    <audio preload="none" controls loop>
+        <!--sem o controls, não aparecerá nada no site-->
+        <!--com preload auto, a página só estará completamente carregada quando o áudio carregar-->
+        <!--o browser tentará sempre o primeiro de cima, se não conseguir tentará o seguinte, até que consiga-->
+        <source src="audios/ncs-slamming-brutal-death-metal.ogg" type="audio/ogg">
+        <source src="audios/ncs-slamming-brutal-death-metal.m4a" type="audio/mp4">
+        <source src="audios/ncs-slamming-brutal-death-metal.mp3" type="audio/mpeg">
+        <source src="audios/ncs-slamming-brutal-death-metal.wav" type="audio/wav"> <!--wav são muito pesados-->
+
+        <p>Seu navegador não conseguiu reproduzir diferentes extensões de áudio. Baixe o áudio <a href="audios/ncs-slamming-brutal-death-metal.mp3" download="brutal-death-metal" type="audio/mpeg"></a>aqui</a></p>
+
+        <!--mp3, wav e ogg são os mais padrões-->
+    </audio>
+
+</body>
+</html>
