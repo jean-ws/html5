@@ -1,5 +1,6 @@
 <h2><strong>html5</strong></h2>
             <p>Eu criei este repositório pra deixar minhas anotações salvas e também pra caso alguém queira utilizar para consulta</p>
+            <p>Pra ver os códigos é só alterar pra master alí... 🙂</p>
 
 <h3>Como falar comigo?</h3>
             <ul>
