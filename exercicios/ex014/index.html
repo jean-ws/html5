@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos locais ou internos</title>
+    <!--tag style (que utiliza seletores)-->
+    <!--muito mais organizada que usar os estilos inline (no meio do HTML). Útil para quando for utilizar o estilo em apenas um documento-->
+    <!--a desvantagem é que, por os estilos ocuparem muito espaço no código, você vai ter uma seção de estilos gigantesca antes de chegar no HTML em si-->
+    <!--outra desvantagem, imaginando um site com várias páginas, é ter que escrever, copiar ou editar a tag style para cada documento quando for necessária alguma mudança no estilo do site-->
+    <style>
+        body {
+            background-color: lightcyan; 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+            font-size: 32px;
+        }
+
+        h1 {
+            background-color: lightpink;
+            color: darkmagenta; 
+            font-size: 1.2em;
+        }
+
+        h2 { 
+            color: darkmagenta; font-size: 1em;
+        }
+
+        p {
+            text-align: justify; 
+            font-size: 0.75em;
+        }
+
+    </style>
+</head>
+<!--CÓDIGO FICA FEIO E BAGUNÇADO-->
+
+<body>
+    <h1>Capítulo 1</h1>
+        <h2>Capítulo 1.1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id aliquid inventore qui consequatur vitae mollitia voluptates, ex amet, nisi ab corrupti excepturi ad numquam aperiam, repellendus nemo sapiente et eligendi!</p>
+
+        <h2>Capítulo 1.2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum est dolore iste, molestiae esse quasi harum nesciunt soluta porro obcaecati sint, quia aliquam voluptates excepturi, ipsa ducimus ipsum delectus minima?</p>
+
+    <h1>Capítulo 2</h1>
+        <h2>Capítulo 2.1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus nobis, quisquam veniam debitis ducimus aperiam libero dolorem modi quasi? Molestias placeat porro dolorem excepturi fuga, eius odio eos. Ipsa!</p>
+    
+    <p>Não é o mais recomendado. É muito trabalhoso, pois precisa aplicar o estilo individualmente em cada elemento. Além disto, polui todo o código HTML. Alterações se tornam extremamente trabalhosas. Deve ser utilizado apenas para estilos específicos e pontuais</p>
+</body>
+</html>
