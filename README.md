@@ -1,5 +1,5 @@
 <h1><strong>HTML5 e CSS3</strong></h1>
-            <p>Eu criei este repositório pra deixar minhas anotações salvas e também pra caso alguém queira utilizar para consulta</p>
+            <p>Eu criei este repositório pra deixar minhas anotações salvas</p>
             <p>Então, se quiser usar é só ver a <code>master</code> alí... 🙂</p>
 
 <h2>Como falar comigo?</h2>
